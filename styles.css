@@ -146,15 +146,6 @@ nav {
   max-width: 75%;
 }
 
-/* Ajusta o estilo das imagens no carrossel para que alinhem com o conteúdo */
-.carousel-item img {
-  width: 100%; /* Para garantir que as imagens ocupem toda a largura do carrossel */
-  height: auto;
-  max-width: 770px; /* Limite o tamanho das imagens */
-  margin-left: 0;
-  margin-right: 0;
-  box-shadow: 1px 1px 8px black;
-}
 
 /* Ajuste do texto dentro das abas */
 .tab-pane {
@@ -177,9 +168,10 @@ nav {
 
 /* Justificar texto nas abas */
 #v-pills-home p, /* Bibliografia */
-#v-pills-profile p { /* 333Tour */
-  text-align: justify;
-}
+#v-pills-profile p, /* 333Tour */
+#v-pills-novidades p { 
+  text-align: justify;}
+
 
 /* Ajuste para o carrossel e conteúdo visual */
 .container {
@@ -193,6 +185,31 @@ footer {
   color: white; /* Texto branco no footer */
   padding: 20px;
   text-align: center;
+}
+body, .tab-pane {
+  text-align: justify !important;
+}
+
+.nav-link-novidades {
+  color: black; /* Cor do texto */
+  background-color: #f0f0f0; /* Cor de fundo inicial */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o botão Novidades */
+.nav-link-novidades:hover {
+  background-color: #021d40; /* Muda a cor de fundo ao passar o mouse */
+  color: white; /* Muda a cor do texto ao passar o mouse */
+  border: 2px solid #11b4d9; /* Borda amarela */
+}
+
+/* Efeito quando o botão Novidades estiver ativo */
+.nav-link-novidades.active {
+  background-color: #ffffffb0; /* Cor de fundo quando ativo */
+  color: white; /* Cor do texto quando ativo */
+  border: 2px solid black; /* Borda amarela quando ativo */
 }
 
 /* Estilo para os botões Bibliografia e 333Tour */
@@ -282,7 +299,7 @@ footer {
   font-style: italic;    /* Colocando o texto em itálico */
 }
 
-/* Carrossel */
+/* Ajuste para o carrossel e legenda */
 .carousel-inner .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); /* Fundo preto translúcido */
   padding: 10px 20px; /* Ajuste o padding conforme necessário */
@@ -296,12 +313,26 @@ footer {
   min-width: 250px; /* Garante que a largura mínima seja 250px para evitar que o fundo desapareça */
   text-align: center; /* Centraliza o texto */
   box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+  min-height: 50px; /* Garante que o texto tenha uma altura mínima */
+  z-index: 0; /* Garante que o texto fique visível sobre a imagem */
 }
 
+/* Ajustes adicionais para telas pequenas */
 @media (max-width: 768px) {
   .carousel-inner .carousel-caption {
     width: 95%; /* Quando a tela for menor, a largura será 95% */
     padding: 5px 10px; /* Ajuste o padding em telas menores */
     min-width: 200px; /* Garante que a legenda não seja muito estreita em telas pequenas */
+    min-height: 60px; /* Garante que o texto não desapareça ou fique muito comprimido */
   }
+}
+
+/* Ajustes gerais para o carrossel */
+.carousel-item img {
+  width: 100%; /* Para garantir que as imagens ocupem toda a largura do carrossel */
+  height: auto;
+  max-width: 770px; /* Limite o tamanho das imagens */
+  margin-left: 0;
+  margin-right: 0;
+  box-shadow: 1px 1px 8px black;
 }
