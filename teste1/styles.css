@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white(0, 0, 0, 0.664);
+    background-image: linear-gradient(to right, #0B6BBF,#0D9FD9, #F2F2F2);
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+h2 {
+    text-align: center;
+    background-color: white(0, 0, 0);
+    margin: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+}
+header {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+}
+div > a {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+a:active {
+    color: white;
+}
+a::after {
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+}
+nav {
+    background-image: linear-gradient(to right, #011640, #C823AE, black 90%);
+}
+nav#links {
+    text-align: justify;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 122px; 
+    box-sizing: 20px 10px 5px; 
+    width: 100%;
+    height: 30px; 
+}
+.grid-item {
+    background-color: #011640; 
+    color: white;
+    height: 30px;
+    text-align: center; 
+    box-sizing: border-box;
+}
+div {
+    display: inline-block;
+    background-color: #F2F2F2(0, 0, 0, 0.692);
+    border: 1px solid #011640;
+    text-align: center;
+    box-sizing: auto;
+    height: 40px;
+    width: 200px;
+}
+div#d1 {
+    text-shadow: 5px 5px 5px #011640;
+    height: 40px;
+    width: 300px;
+    margin: 10px;
+}
+div#d2 {
+    text-align:  center;
+    text-shadow: 5px 5px 5px #011640;
+    height: 50px;
+    width: 100%;
+    margin: 10px;
+}
+div#d3 {
+    text-align:  center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+    height: 25px;
+    width: 100%;
+    margin: 10px;
+}
+div#d4 {
+    text-align:  center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+    height: 25px;
+    width: 100%;
+    margin: 10px;
+}
+iframe {
+    box-shadow: 1px 1px 1px white;
+    box-sizing: border-box;
+}
+main {
+    background-color: black;
+    background-image: linear-gradient(to right, #0B6BBF,#0D9FD9, #F2F2F2);
+}
+span#biografia > p {
+    display: none;
+    color: white;
+    text-decoration: none;
+}
+span#biografia:hover > p {
+    display:block;
+    color: white;
+    text-shadow: 5px 5px 5px #011640;
+    text-decoration: none;
+}
+span#button > button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10;
+    cursor: pointer;
+    border-radius: 5px;
+}
+section#albums a,
+section#gravadora a {
+    color: white; /* Cor branca para links antes de serem clicados */
+    text-decoration: none; /* Remover sublinhado */
+}
+
+section#albums a:visited,
+section#gravadora a:visited {
+    color: white; /* Cor branca para links após serem clicados */
+}
+
+section#albums a:hover,
+section#gravadora a:hover {
+    color: white; /* Cor branca ao passar o mouse */
+    text-decoration: underline; /* Sublinha ao passar o mouse (opcional) */
+}
+
+section#albums a:active,
+section#gravadora a:active {
+    color: white; /* Cor branca ao clicar */
+}
+section {
+    background-color: rgba(0, 0, 0, 0.171);
+    color: white;
+    text-shadow: 10px 10px 10px #781768;
+    border: 5px 5px 5px black;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+}
+h3 {
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+}
+.texto {
+    display: none;
+    margin-top: 10px;
+    color: black;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.171);
+    color: white;
+    text-shadow: 10px 10px 10px #781768;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+    text-align: center;
+}
+section > span#botao {
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+footer {
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, 0.336);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+footer > p {
+    margin: 0px;
+}

@@ -1,212 +1,307 @@
-@charset "UTF-8";
+/* Importação da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+/* Estilo geral para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Freeman', sans-serif; /* Definindo a fonte global */
+}
 
 body {
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: white(0, 0, 0, 0.664);
-    background-image: linear-gradient(to right, #0B6BBF,#0D9FD9, #F2F2F2);
+  background-image: linear-gradient(
+    to right,
+    #11b4d993,
+    rgba(128, 128, 128, 0.39),
+    #0b7abfa1,
+    rgba(128, 128, 128, 0.39),
+    #11b4d993
+  );
 }
-h1 {
-    text-align: center;
-    color: white;
-}
-h2 {
-    text-align: center;
-    background-color: white(0, 0, 0);
-    margin: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
-    border-radius: 10px;
-}
-header {
-    background-color: white;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
-}
-div > a {
-    text-decoration: none;
-}
-a {
-    text-decoration: none;
-}
-a:visited {
-    color: white;
-}
-a:hover {
-    color: white;
-    text-decoration: none;
-}
-a:active {
-    color: white;
-}
-a::after {
-    text-decoration: none;
-    font-weight: normal;
-    color: white;
-}
+
 nav {
-    background-image: linear-gradient(to right, #011640, #C823AE, black 90%);
+  background: #ffffffb0;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  box-shadow: 6px 6px 6px black;
 }
-nav#links {
-    text-align: justify;
+
+.logo img {
+  max-width: 100%;
+  height: auto; /* Garante que a imagem não distorça */
+  max-height: 550px; /* Para telas grandes */
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    gap: 122px; 
-    box-sizing: 20px 10px 5px; 
-    width: 100%;
-    height: 30px; 
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
-.grid-item {
-    background-color: #011640; 
-    color: white;
-    height: 30px;
-    text-align: center; 
-    box-sizing: border-box;
+
+.nav-links li {
+  margin: 0 15px;
 }
-div {
-    display: inline-block;
-    background-color: #F2F2F2(0, 0, 0, 0.692);
-    border: 1px solid #011640;
-    text-align: center;
-    box-sizing: auto;
-    height: 40px;
-    width: 200px;
+
+.nav-links a {
+  text-decoration: none;
+  color: black; /* Preto para o texto na nav, pois a nav é branca */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Animação suave para cor e sombra */
+  text-shadow: 1px 1px 20px #0B6BBF; /* Sombra suave para o texto */
+  font-size: 18px;
+  transition: 0.3s;
 }
-div#d1 {
-    text-shadow: 5px 5px 5px #011640;
-    height: 40px;
-    width: 300px;
-    margin: 10px;
+
+.nav-links a:hover {
+  color: #0B6BBF;
+  text-shadow: 2px 2px 5px #11b4d960; /* Sombra mais forte ao passar o mouse */
 }
-div#d2 {
-    text-align:  center;
-    text-shadow: 5px 5px 5px #011640;
-    height: 50px;
-    width: 100%;
-    margin: 10px;
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
-div#d3 {
-    text-align:  center;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
-    height: 25px;
-    width: 100%;
-    margin: 10px;
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: black;
 }
-div#d4 {
-    text-align:  center;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
-    height: 25px;
-    width: 100%;
-    margin: 10px;
+
+/* Estilo para a classe .link-vendas */
+.link-vendas {
+  color: black; /* Cor preta para o link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Animação suave para cor e sombra */
+  text-shadow: 1px 1px 20px rgb(0, 0, 0); /* Sombra suave para o texto */
 }
-iframe {
-    box-shadow: 1px 1px 1px white;
-    box-sizing: border-box;
+
+/* Efeito de animação ao passar o mouse sobre o link */
+.link-vendas:hover {
+  color: rgba(0, 0, 0, 0.548); /* Cor amarela ao passar o mouse */
+  text-shadow: 2px 2px 5px rgba(2, 178, 248, 0.418); /* Sombra mais forte ao passar o mouse */
 }
-main {
-    background-color: black;
-    background-image: linear-gradient(to right, #0B6BBF,#0D9FD9, #F2F2F2);
-}
-span#biografia > p {
-    display: none;
-    color: white;
-    text-decoration: none;
-}
-span#biografia:hover > p {
-    display:block;
-    color: white;
-    text-shadow: 5px 5px 5px #011640;
-    text-decoration: none;
-}
-span#button > button {
-    background-color: transparent;
-    color: black;
-    border: none;
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  nav {
     padding: 10px 20px;
-    font-family: sans-serif;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 10;
-    cursor: pointer;
-    border-radius: 5px;
-}
-section#albums a,
-section#gravadora a {
-    color: white; /* Cor branca para links antes de serem clicados */
-    text-decoration: none; /* Remover sublinhado */
-}
+  }
 
-section#albums a:visited,
-section#gravadora a:visited {
-    color: white; /* Cor branca para links após serem clicados */
-}
+  .logo img {
+    max-height: 300px; /* Ajusta a altura da logo para dispositivos móveis */
+    width: auto; /* Garante que a imagem tenha proporção correta */
+  }
 
-section#albums a:hover,
-section#gravadora a:hover {
-    color: white; /* Cor branca ao passar o mouse */
-    text-decoration: underline; /* Sublinha ao passar o mouse (opcional) */
-}
-
-section#albums a:active,
-section#gravadora a:active {
-    color: white; /* Cor branca ao clicar */
-}
-section {
-    background-color: rgba(0, 0, 0, 0.171);
-    color: white;
-    text-shadow: 10px 10px 10px #781768;
-    border: 5px 5px 5px black;
-    text-align: justify;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
-}
-h3 {
-    text-align: center;
-    background-color: black;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
-}
-.texto {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #ffffff; /* A nav será branca também no mobile */
+    flex-direction: column;
+    align-items: center;
     display: none;
-    margin-top: 10px;
-    color: black;
-    width: auto;
-    height: auto;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.171);
-    color: white;
-    text-shadow: 10px 10px 10px #781768;
-    text-align: justify;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
-    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
-section > span#botao {
-    cursor: pointer;
-    color: white;
-    text-decoration: underline;
+
+/* Ajuste da largura das colunas */
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.col-md-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-md-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+/* Ajusta o estilo das imagens no carrossel para que alinhem com o conteúdo */
+.carousel-item img {
+  width: 100%; /* Para garantir que as imagens ocupem toda a largura do carrossel */
+  height: auto;
+  max-width: 770px; /* Limite o tamanho das imagens */
+  margin-left: 0;
+  margin-right: 0;
+  box-shadow: 1px 1px 8px black;
+}
+
+/* Ajuste do texto dentro das abas */
+.tab-pane {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Alinhamento do conteúdo da aba para que comece na mesma posição que a imagem */
+.tab-content {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Evitar o overflow do texto */
+.tab-pane p {
+  word-wrap: break-word;
+}
+
+/* Justificar texto nas abas */
+#v-pills-home p, /* Bibliografia */
+#v-pills-profile p { /* 333Tour */
+  text-align: justify;
+}
+
+/* Ajuste para o carrossel e conteúdo visual */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Footer */
 footer {
-    font-family: monospace;
-    background-color: rgba(0, 0, 0, 0.336);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+  background-color: #000000; /* Preto */
+  color: white; /* Texto branco no footer */
+  padding: 20px;
+  text-align: center;
 }
-footer > p {
-    margin: 0px;
+
+/* Estilo para os botões Bibliografia e 333Tour */
+.nav-link-bibliografia {
+  color: black; /* Cor do texto */
+  background-color: #f0f0f0; /* Cor de fundo inicial */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o botão Bibliografia */
+.nav-link-bibliografia:hover {
+  background-color: #021d40; /* Muda a cor de fundo ao passar o mouse */
+  color: white; /* Muda a cor do texto ao passar o mouse */
+  border: 2px solid #11b4d9; /* Borda amarela */
+}
+
+/* Efeito quando o botão Bibliografia estiver ativo */
+.nav-link-bibliografia.active {
+  background-color: #ffffffb0; /* Cor de fundo quando ativo */
+  color: white; /* Cor do texto quando ativo */
+  border: 2px solid black; /* Borda amarela quando ativo */
+}
+
+/* Estilo para o botão 333Tour */
+.nav-link-333tour {
+  color: black; /* Cor do texto */
+  background-color: #f0f0f0; /* Cor de fundo inicial */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o botão 333Tour */
+.nav-link-333tour:hover {
+  background-color: #021d40; /* Muda a cor de fundo ao passar o mouse */
+  color: white; /* Muda a cor do texto ao passar o mouse */
+  border: 2px solid #11b4d9; /* Borda amarela */
+}
+
+/* Efeito quando o botão 333Tour estiver ativo */
+.nav-link-333tour.active {
+  background-color: #ffffffb0; /* Cor de fundo quando ativo */
+  color: white; /* Cor do texto quando ativo */
+  border: 2px solid black; /* Borda amarela quando ativo */
+}
+
+/* Estilo para os botões Músicas, Álbuns e 30PRAUM */
+.navbar-brand {
+  font-size: 18px;
+  padding: 10px 20px;
+  color: black; /* Cor do texto */
+  background-color: #ffffffb0; /* Cor de fundo inicial */
+  transition: all 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+.navbar-brand:hover {
+  background-color: #ffffffb0; /* Muda a cor de fundo ao passar o mouse */
+  color: black; /* Muda a cor do texto ao passar o mouse */
+  border: 3px solid #11b4d9; /* Borda amarela */
+}
+
+/* Efeito quando o botão Músicas, Álbuns ou 30PRAUM estiver ativo */
+.navbar-brand.active {
+  background-color: #ffffffb0; /* Cor de fundo quando ativo */
+  color: white; /* Cor do texto quando ativo */
+  border: 2px solid black; /* Borda amarela quando ativo */
+}
+
+.rodape {
+  color: white; /* Cor preta para o link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Animação suave para cor e sombra */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra suave para o texto */
+}
+
+/* Efeito de animação ao passar o mouse sobre o link */
+.rodape:hover {
+  color: rgba(255, 255, 255, 0.685); /* Cor amarela ao passar o mouse */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Sombra mais forte ao passar o mouse */
+}
+
+/* Justificar e colocar em itálico o texto dentro da div .playlist-container */
+.playlist-container {
+  text-align: justify;   /* Justificando o texto */
+  font-style: italic;    /* Colocando o texto em itálico */
+}
+
+/* Carrossel */
+.carousel-inner .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo preto translúcido */
+  padding: 10px 20px; /* Ajuste o padding conforme necessário */
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Posiciona no centro da imagem */
+  transform: translateX(-50%); /* Ajusta a posição para o centro exato */
+  width: 90%; /* A largura será 90% da largura do contêiner */
+  max-width: 770px; /* Limita a largura máxima para 770px */
+  min-width: 250px; /* Garante que a largura mínima seja 250px para evitar que o fundo desapareça */
+  text-align: center; /* Centraliza o texto */
+  box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-caption {
+    width: 95%; /* Quando a tela for menor, a largura será 95% */
+    padding: 5px 10px; /* Ajuste o padding em telas menores */
+    min-width: 200px; /* Garante que a legenda não seja muito estreita em telas pequenas */
+  }
 }

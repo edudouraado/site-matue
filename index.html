@@ -1,87 +1,297 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matuê</title>
-    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="shortcut icon" href="imagens/logo.jpg" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <h1> <img src="imagens/333.jpg" alt="" vspace="5" hspace="20"><img src="imagens/logo-matue1.png" alt="Matuê"><img src="imagens/333.jpg" alt="" vspace="5" hspace="20"></h1>
-        <div class="grid-container">
-            <div class="grid-item"><a href="https://30praum.com" target="_blank" >Store</a></div>
-            <div class="grid-item"><a href="https://www.instagram.com/matue/" target="_blank" >Instagram</a></div>
-            <div class="grid-item"><a href="https://www.youtube.com/@30PRAUM" target="_blank">Youtube</a></div>
-            <div class="grid-item"><a href="https://open.spotify.com/intl-pt/artist/5nP8x4uEFjAAmDzwOEc9b8" target="_blank">Spotify</a></div>
-            <div class="grid-item"><a href="https://music.youtube.com/channel/UCYF3HLy2nzDREEE50KbOnKA" target="_blank">Youtube Music</a></div>
-            <div class="grid-item"><a href="https://music.apple.com/br/artist/matuê/1173165419" target="_blank">Apple Music</a></div>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Barra de navegação -->
+    <nav>
+      <div class="logo"><img src="imagens/logo-matue1.png" alt="Logo" /></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="https://30praum.store" target="_blank">Store</a></li>
+        <li><a href="https://www.instagram.com/matue/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.youtube.com/c/30PRAUM" target="_blank">Youtube</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Abas verticais -->
+        <div class="col-md-3">
+          <div
+            class="nav flex-column nav-pills"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <a
+              class="nav-link nav-link-bibliografia active"
+              id="v-pills-home-tab"
+              data-bs-toggle="pill"
+              href="#v-pills-home"
+              role="tab"
+              aria-controls="v-pills-home"
+              aria-selected="true"
+              >Bibliografia</a
+            >
+
+            <a
+              class="nav-link nav-link-333tour"
+              id="v-pills-profile-tab"
+              data-bs-toggle="pill"
+              href="#v-pills-profile"
+              role="tab"
+              aria-controls="v-pills-profile"
+              aria-selected="false"
+              >333Tour</a
+            >
+          </div>
         </div>
-    </header>
-    <main>
-        <section><span id="biografia"> Biografia
-            <p>Nome completo: Matheus Brasileiro Aguiar <br> Data de nascimento: 29 de outubro de 1994 <br> Local de nascimento: Fortaleza, Ceará, Brasil <br> Nome artístico: Matuê <br> Profissão: Cantor, compositor e rapper <br> <br>Início de carreira: <br> Matuê, cujo nome verdadeiro é Matheus Brasileiro Aguiar, começou a sua carreira musical na cena do rap e do trap brasileiro. Nascido e criado em Fortaleza, Ceará, Matuê se destacou desde cedo pela sua habilidade em criar músicas que combinavam elementos do trap com influências do rap e da música popular brasileira. <br> <br> Ascensão e sucesso: <br> A carreira de Matuê ganhou destaque com o lançamento de seus primeiros singles, que rapidamente conquistaram a atenção do público e da crítica. O artista se tornou conhecido por sua voz característica, suas letras autênticas e sua capacidade de misturar estilos musicais. <br> <br> Álbuns e principais sucessos: <br> Matuê lançou seu álbum de estreia, "Matuê" (2017), que rapidamente se tornou um sucesso, consolidando sua posição na cena musical brasileira. Seu segundo álbum, "Máquina do Tempo" (2018), foi aclamado pela crítica e pelo público, com sucessos como "Kenny G". Seu trabalho é frequentemente associado a uma mistura única de trap, rap e outros gêneros, refletindo sua versatilidade como artista. <br><br> Estilo e influência: <br> O estilo de Matuê é caracterizado por uma combinação de rimas afiadas, batidas cativantes e uma abordagem experimental à produção musical. Ele é conhecido por sua habilidade em criar atmosferas sonoras distintas e letras que frequentemente abordam temas como a vida urbana, relacionamentos e reflexões pessoais. <br> <br> Contribuições e impacto: <br> Além de seu sucesso comercial, Matuê tem sido uma figura importante na evolução do trap no Brasil, ajudando a moldar a cena musical contemporânea do país. Ele tem sido um dos pioneiros na popularização do trap brasileiro e influenciou muitos artistas novos na cena. <br> <br> Vida pessoal: <br> Embora Matuê mantenha sua vida pessoal relativamente privada, ele é conhecido por sua dedicação à música e seu desejo de inovar continuamente no cenário musical. Ele continua a criar e lançar novas músicas, mantendo uma base de fãs fiel e expandindo sua influência no Brasil e além. <br> <br> Matuê é uma figura central na música brasileira contemporânea, e sua carreira continua a evoluir com cada novo lançamento, solidificando ainda mais seu lugar como um dos artistas mais importantes da cena musical atual.</p>
-        </span>
-        </section>
-        
-        <section><div id="d2"> Músicas <br>Algumas das músicas mais ouvidas do momento:</div> <br>
-            <div id="d1">Reza do Milhão (2024): <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4oHVbU9l8Ja6g4q4ACf7M4?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
 
-            <div id="d1">Filho da Noite (2024): <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/40IXmplKTcyWPr9HNCik7e?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-
-            <div id="d1">Vampiro (2022) :<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6bTdZ7xfKp3NqqADJ8HLyj?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-
-            <div id="d1">Anos Luz (2017): <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0GYPcKDlsb8WEtJkkKdtgH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-
-            <div id="d1">Máquina do Tempo (2020): <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5oI9blwsXC8AkTWw6wASY8?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-
-            <div id="d1">Conexões de Máfia (2023): <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3ktTWpYdXrYApH54cBo4Ap?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-
-            <div id="d1">A Morte do Autotune (2018): <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4MF0VMffyxHsy3GZwwUnAs?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-
-            <div id="d1">Antes (2020): <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2XymTaHTrQWDEuSyhfZvqF?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-
-            <div id="d1">A Última Dança (2024):<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6ifISefylcgPQksE0gmcVY?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-
-            <div id="d1">Quer Voar (2021): <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7aZusA4cWXz3Wv9e9uhavz?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-            <div id="d3">
+        <!-- Conteúdo das abas -->
+        <div class="col-md-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="v-pills-home"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+            >
+              <h3>Bibliografia</h3>
+              <p>
+                Matheus Brasileiro Aguiar, mais conhecido como Matuê, nasceu em
+                Fortaleza, Ceará, no dia 11 de outubro de 1993. Ele é um rapper,
+                cantor, compositor, guitarrista e empresário brasileiro. Ganhou
+                notoriedade com o lançamento do single "Anos Luz" em 2017 e com
+                o álbum "Máquina do Tempo" em 2020. Matuê é considerado um dos
+                principais representantes do trap brasileiro. <br />
+                Em 2023, foi o único artista de hip hop a alcançar a marca de 10
+                músicas com mais de 100 milhões de streams nas plataformas
+                digitais. <br />
+                Em setembro de 2024, Matuê lançou seu segundo álbum, "333",
+                quebrando recordes ao alcançar a maior estreia de um álbum na
+                história do Spotify Brasil, com 16,8 milhões de reproduções nas
+                primeiras 24 horas, além de alcançar o primeiro lugar no ranking
+                global do Spotify.
+                <br />
+                <br />Matuê nasceu em Fortaleza, mas aos oito anos se mudou para
+                Oakland, Califórnia, onde viveu por três anos. Nesse período,
+                tornou-se fluente em inglês. Em 2004, retornou ao Brasil, aos 11
+                anos. Durante sua adolescência, ele se interessou pelo rap
+                enquanto estudava em uma escola pública. No entanto, passou por
+                momentos difíceis, como a perda de sua avó, que sempre o apoiou.
+                <br />
+                Trabalhou como vendedor em uma loja de roupas e, mais tarde, deu
+                aulas particulares de inglês. Esse emprego lhe permitiu juntar
+                dinheiro para investir em sua carreira musical. Matuê comentou
+                que seu tempo nos Estados Unidos foi fundamental para abrir
+                portas e entender a importância do rap. <br />
+                Em 2021, Matuê revelou que se tornou pai durante a pandemia,
+                embora tenha mantido a privacidade sobre o assunto.
+                <br />
+                <br />
+                Matuê começou sua carreira em 2015, com o lançamento de uma
+                mixtape de reggae chamada "Reggae", produzida pela 30PRAUM, mas
+                a mixtape não teve grande sucesso. Decidiu então se dedicar ao
+                trap e, em 2016, lançou "RBN", um hit que o destacou na cena
+                nacional, com um videoclipe único e originalidade musical.
+                <br />
+                Desde então, ele tem se destacado no cenário do trap, superando
+                suas produções anteriores com novas sonoridades e mantendo sua
+                autenticidade. Matuê é diretor criativo da 30PRAUM e tem mais de
+                7 milhões de ouvintes mensais no Spotify. Seu álbum "Máquina do
+                Tempo" alcançou mais de 110 milhões de visualizações no YouTube
+                em apenas uma semana. Seu maior sucesso, "Kenny G", já
+                ultrapassou 267 milhões de visualizações. <br />
+                O álbum "Máquina do Tempo" foi lançado em 2020 e se destacou,
+                tanto pela música homônima quanto pela faixa bônus "A+". Esse
+                lançamento quebrou recordes, com 4,6 milhões de streams nas
+                primeiras 24 horas, e tornou-se o primeiro álbum de rap nacional
+                a ter cinco faixas com mais de 100 milhões de reproduções. Em
+                setembro de 2024, Matuê lançou seu segundo álbum, "333", que
+                novamente quebrou recordes no Spotify Brasil, tornando-se o mais
+                ouvido nas primeiras 24 horas, com mais de 16 milhões de
+                streams. No primeiro dia de lançamento, 11 das 12 faixas
+                entraram no Top 50 do Spotify Brasil, e no segundo dia, Matuê
+                teve nove músicas no Top 10, com "Crack com Mussilon" alcançando
+                a primeira posição. <br />
+                Além disso, Matuê fez uma performance promocional única no Vale
+                do Anhangabaú, atraindo grande atenção da mídia e dos fãs.
+              </p>
             </div>
-        </section>
+            <div
+              class="tab-pane fade"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+            >
+              <h3>333Tour</h3>
+              <p>
+                A 333Tour comemora o aclamado álbum de Matuê, um marco no trap
+                brasileiro. Com letras impactantes, batidas incomparáveis e uma
+                energia envolvente, "333" conquistou uma enorme base de fãs em
+                todo o Brasil, tornando-se um dos lançamentos mais importantes
+                do gênero. Agora, você pode vivenciar essa experiência ao vivo!
+                <br />
+                <br />
 
-        <section id="albums"><span id="biografia"> 
-            <a href="albums.html">Álbums</a>
-        </span>
-        </section>
+                Não deixe passar essa chance única! Garanta seus ingressos
+                agora! <br />
+                <br />
 
-        <section id="gravadora"> <span id="biografia"></span><a href="30praum.html">30PRAUM</a>
-        </section>
+                <a href="https://linktr.ee/333tournee" target="_blank" class="link-vendas">Vendas aqui!</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <section><span id="eventos" onclick="toggleTexto()"> Eventos
-            <div class="texto" id="texto"><p>Próximos shows:</p> <br> <p><img src="imagens/eventos.png" alt=""></p>
-                <span id="button">
-                    <button><a href="https://www.songkick.com/concerts/42075177-matue-at-parque-de-eventos-feltrin" target="_blank">Santa Maria/RS</a></button>
-                    <button><a href="https://www.songkick.com/concerts/41695767-matue-at-expotrade-arena" target="_blank">Curitiba/PR</a></button>
-                    <button><a href="https://baladapp.com.br/evento/duts-15-anos/5152" target="_blank">Campo Grande/MS</a></button>
-                    <button><a href="https://byma.com.br/event/65f0572958db82000854c4a4" target="_blank">Londrina/PR</a></button>
-                    <button><a href="https://www.instagram.com/p/C-C22btRaGo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Taíba/CE</a></button>
-                    <button><a href="https://www.songkick.com/pt/concerts/42084757-matue-at-unknown-venue" target="_blank">Cariacica/ES</a></button>
-                </span></div>
-            </span>
-        </section>
-        
-        <script>
-            function toggleTexto() {
-            var texto = document.getElementById("texto");
-            if (texto.style.display === "none") {
-                texto.style.display = "block";
-            } else {
-                texto.style.display = "none";
-            }
-        }
-        </script>
-    <footer>
-        <p>Desenvolvido por <a href="https://github.com/edudouraado" target="">@edudouraado</a></p>
+    <br />
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Imagem 1 -->
+        <div class="carousel-item active">
+          <img
+            src="imagens/a/1.png"
+            class="d-block w-100"
+            alt="Imagem 1"
+            style="max-width: 770px; max-height: 770px; margin: 0 auto"
+          />
+        </div>
+        <!-- Imagem 2 -->
+        <div class="carousel-item">
+          <img
+            src="imagens/a/2.png"
+            class="d-block w-100"
+            alt="Imagem 2"
+            style="max-width: 770px; max-height: 770px; margin: 0 auto"
+          />
+        </div>
+        <!-- Imagem 3 -->
+        <div class="carousel-item">
+          <img
+            src="imagens/a/3.png"
+            class="d-block w-100"
+            alt="Imagem 3"
+            style="max-width: 770px; max-height: 770px; margin: 0 auto"
+          />
+        </div>
+        <!-- Imagem 4 -->
+        <div class="carousel-item">
+          <img
+            src="imagens/a/4.png"
+            class="d-block w-100"
+            alt="Imagem 4"
+            style="max-width: 770px; max-height: 770px; margin: 0 auto"
+          />
+        </div>
+        <!-- Imagem 5 -->
+        <div class="carousel-item">
+          <img
+            src="imagens/a/5.png"
+            class="d-block w-100"
+            alt="Imagem 5"
+            style="max-width: 770px; max-height: 770px; margin: 0 auto"
+          />
+        </div>
+        <!-- Imagem 6 -->
+        <div class="carousel-item">
+          <img
+            src="imagens/a/6.png"
+            class="d-block w-100"
+            alt="Imagem 6"
+            style="max-width: 770px; max-height: 770px; margin: 0 auto"
+          />
+        </div>
+        <!-- Imagem 7 -->
+        <div class="carousel-item">
+          <img
+            src="imagens/a/7.png"
+            class="d-block w-100"
+            alt="Imagem 7"
+            style="max-width: 770px; max-height: 770px; margin: 0 auto"
+          />
+        </div>
+      </div>
+
+      <!-- Controles do Carousel -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container mt-5">
+      <!-- Primeira Nav -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container-fluid justify-content-center">
+          <!-- Link para o arquivo Músicas.html -->
+          <a class="navbar-brand" href="musicas.html">Músicas</a>
+        </div>
+      </nav>
+
+      <!-- Segunda Nav -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container-fluid justify-content-center">
+          <!-- Link para o arquivo Albums.html -->
+          <a class="navbar-brand" href="albums.html">Álbum</a>
+        </div>
+      </nav>
+
+      <!-- Terceira Nav -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-center">
+          <!-- Link para o arquivo 30PRAUM.html -->
+          <a class="navbar-brand" href="30praum.html">30PRAUM</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Conteúdo da página vai aqui -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p>&copy; 2025 <a href="https://github.com/edudouraado" class="rodape">@edudouraado</a>. Todos os direitos reservados.</p>
     </footer>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

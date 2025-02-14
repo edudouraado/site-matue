@@ -1,37 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Álbums Matuê</title>
-    <link rel="shortcut icon" href="imagens/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1> <img src="imagens/333.jpg" alt="" vspace="5" hspace="20"><img src="imagens/logo-matue1.png" alt="Matuê"><img src="imagens/333.jpg" alt="" vspace="5" hspace="20"></h1>
-        <div class="grid-container">
-            <div class="grid-item"><a href="https://30praum.com" target="_blank" >Store</a></div>
-            <div class="grid-item"><a href="https://www.instagram.com/matue/" target="_blank" >Instagram</a></div>
-            <div class="grid-item"><a href="https://www.youtube.com/@30PRAUM" target="_blank">Youtube</a></div>
-            <div class="grid-item"><a href="https://open.spotify.com/intl-pt/artist/5nP8x4uEFjAAmDzwOEc9b8" target="_blank">Spotify</a></div>
-            <div class="grid-item"><a href="https://music.youtube.com/channel/UCYF3HLy2nzDREEE50KbOnKA" target="_blank">Youtube Music</a></div>
-            <div class="grid-item"><a href="https://music.apple.com/br/artist/matuê/1173165419" target="_blank">Apple Music</a></div>
-        </div>
-    </header>
-    <h1></h1>
-    <section><div id="d2"> Alguns dos <br> álbums:</div> <br>
-        <div id="d4">333 - SALVE TODOS (2024): <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5CP84pfi4AFe95UTACFWrk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-        
-        <div id="d4">Máquina do Tempo (2020): <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6ehm0SMBBoSxH8oSrFXre6?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Álbum - Matuê</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .playlist-container {
+        background-color: #f0f0f0;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 40px;
+      }
 
-        <div id="d4">Sabor Overdose no Yakisoba (2024): <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1rTbSeEJ9D8doCj60u7RmG?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-        <div id="d3">
-        </div>
-    </section>
-    <h3><a href="index.html">Voltar a página anterior.</a></h3>
-</body>
-<footer>
-    <p>Desenvolvido por <a href="https://github.com/edudouraado" target="_blank">@edudouraado</a></p>
-</footer>
+      .playlist-container h3 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .spotify-embed {
+        width: 100%;
+        height: 380px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        margin-top: 50px;
+      }
+
+      footer a {
+        color: #ff6f61;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de navegação -->
+    <nav>
+      <div class="logo"><img src="imagens/logo-matue1.png" alt="Logo" /></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="https://www.instagram.com/matue/?hl=pt-br">Instagram</a></li>
+        <li><a href="https://www.youtube.com/c/MatueOficial">Youtube</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <!-- Conteúdo da página -->
+    <div class="container mt-5">
+      <h1>Álbum de Matuê</h1>
+      <p>Informações sobre o álbum de Matuê...</p>
+
+      <!-- Playlist 1 -->
+      <div class="playlist-container" class="playlist">
+        <h3>333 SALVE TODOS (2024)</h3>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5CP84pfi4AFe95UTACFWrk?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <p>Em "333", Matuê incorpora o trap de forma criativa, combinando-o com outros elementos musicais. Enquanto explora uma persona mais introspectiva, refletindo sobre ambições e desafios de maneira genuína, suas sonoridades transitam entre psicodelia, R&B, disco music e pop. O resultado é uma proposta que, apesar de preservar aspectos essenciais do gênero que o tornou famoso, amplia suas possibilidades e aponta para novos rumos.</p>
+      </div>
+
+      <!-- Playlist 2 -->
+      <div class="playlist-container" class="playlist">
+        <h3>MÁQUINA DO TEMPO (2020)</h3>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6ehm0SMBBoSxH8oSrFXre6?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <p> Em "Máquina do Tempo", Matuê constrói um mundo onde sucesso, riqueza e prazer se misturam, e a ideia de controlar o tempo surge como um desejo constante, representando talvez o anseio de dominar todos os aspectos da vida, uma fantasia recorrente no imaginário humano.</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <p>&copy; 2025 <a href="https://github.com/edudouraado" class="rodape">@edudouraado</a>. Todos os direitos reservados.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
